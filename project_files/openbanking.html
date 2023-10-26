@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Settings</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2>System Settings</h2>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#emailService">Email Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#emailTemplate">Email Template</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#externalServices">External Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#mockServices">Mock Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#generalSettings">General Settings</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Email Service Tab -->
+      <div class="tab-pane container active" id="emailService">
+        <form>
+          <div class="form-group">
+            <label for="emailProvider">Email Provider</label>
+            <input type="text" class="form-control" id="emailProvider" value="SMTP">
+          </div>
+          <div class="form-group">
+            <label for="emailKey">Email Key</label>
+            <input type="text" class="form-control" id="emailKey" value="123456">
+          </div>
+          <div class="form-group">
+            <label for="emailSenderID">Email Sender ID</label>
+            <input type="text" class="form-control" id="emailSenderID" value="noreply@example.com">
+          </div>
+          <div class="form-group">
+            <label for="emailBaseURL">Email Base URL</label>
+            <input type="text" class="form-control" id="emailBaseURL" value="https://email.example.com">
+          </div>
+        </form>
+      </div>
+
+      <!-- Email Template Tab -->
+      <div class="tab-pane container fade" id="emailTemplate">
+        <form>
+          <!-- Add your form fields for Email Template here -->
+          <div class="form-group">
+            <label for="templateName">Template Name</label>
+            <input type="text" class="form-control" id="templateName" value="Welcome Email">
+          </div>
+          <div class="form-group">
+            <label for="templateContent">Template Content</label>
+            <textarea class="form-control" id="templateContent">Hello, welcome to our service!</textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- External Services Tab -->
+      <div class="tab-pane container fade" id="externalServices">
+        <form>
+            <div class="form-group">
+                <label for="registryURL">Registry URL</label>
+                <input type="text" class="form-control" id="registryURL" value="https://registry.example.com">
+            </div>
+            <div class="form-group">
+                <label for="registryAPIKey">Registry API Key</label>
+                <input type="text" class="form-control" id="registryAPIKey">
+            </div>
+              
+            <!-- Core Banking Service -->
+            <div class="form-group">
+                <label for="coreBankingURL">Core Banking URL</label>
+                <input type="text" class="form-control" id="coreBankingURL" value="https://corebanking.example.com">
+            </div>
+            <div class="form-group">
+                <label for="coreBankingAPIKey">Core Banking API Key</label>
+                <input type="text" class="form-control" id="coreBankingAPIKey">
+            </div>
+          
+            <!-- Consent Service -->
+            <div class="form-group">
+                <label for="consentURL">Consent URL</label>
+                <input type="text" class="form-control" id="consentURL" value="https://consent.example.com">
+            </div>
+            <div class="form-group">
+                <label for="consentAPIKey">Consent API Key</label>
+                <input type="text" class="form-control" id="consentAPIKey">
+            </div>
+          <!-- Add similar fields for credentials and other services -->
+        </form>
+      </div>
+
+      <!-- Mock Services Tab -->
+      <div class="tab-pane container fade" id="mockServices">
+        <form>
+          <div class="form-group">
+            <label for="mockRegistryURL">Mock Registry URL</label>
+            <input type="text" class="form-control" id="mockRegistryURL" value="https://mockregistry.example.com">
+          </div>
+          <div class="form-group">
+            <label for="mockConsentURL">Mock Consent URL</label>
+            <input type="text" class="form-control" id="mockConsentURL" value="https://mockconsent.example.com">
+          </div>
+          <!-- Add similar fields for other mock services -->
+        </form>
+      </div>
+
+      <!-- General Settings Tab -->
+      <div class="tab-pane container fade" id="generalSettings">
+        <form>
+          <div class="form-group">
+            <label for="inactivityTimeout">Inactivity Timeout</label>
+            <input type="text" class="form-control" id="inactivityTimeout" value="5 minutes">
+          </div>
+          <div class="form-group">
+            <label for="requestTimeout">Request Timeout</label>
+            <input type="text" class="form-control" id="requestTimeout" value="30 seconds">
+          </div>
+          <!-- Add similar fields for other general settings -->
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></body>
+</html>
